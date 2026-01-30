@@ -1,0 +1,186 @@
+/* ================= MOBILE NAVBAR ================= */
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block !important;
+        font-size: 3.6rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1f242d;
+        padding: 1rem 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 2rem;
+        display: block;
+    }
+}
+
+
+
+/* ================= FIXED MOBILE HOME SECTION ================= */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column !important;
+        text-align: center;
+        padding-top: 8rem !important; /* Adjust based on your header height */
+        gap: 1.5rem !important; 
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-info h2 {
+        font-size: 2.2rem !important;
+        display: block !important; /* Essential: Allows text to stay on one line */
+        margin: 0 auto !important;
+        line-height: 1.4;
+    }
+
+    /* FIX: Software Engineer, etc. stay on the same line as "I'm a" */
+    .home-info h2 span {
+        position: relative !important; /* Not absolute, so it pushes the para down */
+        display: inline-block !important; /* Treats the words as a single unit */
+        margin-left: 8px !important;    /* Small space after "I'm a" */
+        color: #00cc00;
+        vertical-align: bottom;         /* Keeps text aligned perfectly */
+    }
+
+    /* FIX: Paragraph stays exactly one line below the text */
+    .home-info p {
+        position: relative !important;
+        margin-top: 1.5rem !important; /* This creates the clean gap you need */
+        font-size: 1.5rem !important;
+        padding: 0 10%;
+        line-height: 1.6;
+    }
+
+    /* Keep buttons and socials centered */
+    .btn-sci {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    /* ================= FIXED ABOUT US SECTION ================= */
+.about {
+    display: flex !important;
+    flex-direction: column !important; /* Forces Image to the top, Text to the bottom */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    padding: 4rem 5% !important; /* Tightens the top/bottom spacing */
+    gap: 1rem !important;        /* Removes the huge blank area between img and text */
+    min-height: auto !important;
+}
+
+.about-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* Smallest possible gap before text starts */
+}
+
+.about-img .img-box {
+    width: 220px !important; /* Matching your home profile pic size */
+    height: 220px !important;
+    position: relative;
+}
+
+/* If you have a rotating border like the home page, this keeps it consistent */
+.about-img .img-box img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .2rem solid #00cc00;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.about-content h2 {
+    font-size: 3.2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.about-content h3 {
+    font-size: 2rem !important;
+    color: #fff;
+    margin-bottom: 1rem !important;
+}
+
+.about-content p {
+    font-size: 1.5rem !important;
+    line-height: 1.6;
+    margin-bottom: 2rem !important;
+    padding: 0 5%;
+}
+
+/* Center the button at the bottom of the section */
+.about-content .btn {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    /* 1. Fix the Overlap/Shaking in Hero */
+    .home-info h2 {
+        display: flex !important;
+        flex-direction: column !important; /* Forces green text to its own line */
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 2.2rem !important;
+    }
+
+    .home-info h2 span {
+        display: block !important; /* Stacks it underneath "I'm a" */
+        min-height: 3.5rem; /* Prevents layout jumping while typing */
+        margin-left: 0 !important;
+        color: #00cc00;
+        white-space: nowrap;
+    }
+
+    /* 2. Fix the Contact Form Layout */
+    .contact form .input-box {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .contact form .input-box input, 
+    .contact form textarea {
+        width: 100% !important;
+        margin: 0.8rem 0 !important;
+        padding: 1.5rem;
+        background: #323946; /* Match your theme */
+        border-radius: 0.8rem;
+        color: #fff;
+    }
+}
+
+    
