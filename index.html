@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+    <a href="#home" class="logo">Portfolio.</a>
+    <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class='bx bx-menu' id="menu-icon"></i>
+</nav>
+        
+</header>
+<section class="home" id="home"> <div class="home-info">
+        <h1>Dasuni Livera</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Software Developer">Software Developer</span>
+                <span style="--i:3;" data-text="Junior Software Engineer">Junior Software Engineer</span>
+                <span style="--i:2;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:1;" data-text="Undergraduate Student">Undergraduate Student</span>
+            </h2>
+       
+            <p>
+            A Software Engineering undergraduate dedicated to building clean, functional, 
+            and user-centric applications. Currently preparing to transition my academic 
+            journey to a Bachelor's degree in the UK.
+        </p>
+         <div class="btn-sci">
+    <a href="Dasuni_CV.pdf" class="btn" download="Dasuni_Livera_CV">Download CV</a>
+
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/dasuni-livera-801677347" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Dassz06" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://wa.link/569hce" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+</div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="home.png" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about" id="about">
+    <div class="about-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="home.png" alt="About Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="about-info">
+        <h1>About <span>Me</span></h1>
+        <h2>Software Engineering Undergraduate</h2>
+        <p>
+            I am a dedicated Software Engineering student with a deep passion for solving 
+            complex problems through code. My journey in technology is driven by a curiosity 
+            for digital architectures and a commitment to creating seamless user experiences.
+        </p>
+        <p>
+            Currently, I am honing my skills in modern web technologies while preparing for 
+            the next big step in my academic career: <strong>pursuing my Bachelor’s degree 
+            at a prestigious university in the UK.</strong> I am eager to bring my technical 
+            foundation to a global learning environment and continue building high-performance, 
+            user-centric applications.
+        </p>
+        <a href="Dasuni_CV.pdf" class="btn" download="Dasuni_Livera_CV">Download CV</a>
+    </div>
+
+</section>
+    
+<section class="projects" id="projects">
+    <h1 class="heading">My <span>Projects</span></h1>
+
+    <div class="projects-container"> 
+        
+        <div class="project-box">
+            <div class="project-img">
+                <img src="tour.png" alt="Tour Site">
+            </div>
+            <div class="project-content">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Tour & Travel Site</h3>
+                <p>A responsive web application featuring destination galleries and booking inquiries.</p>
+                <a href="javascript:void(0)" class="btn" 
+                   onclick="openModal('https://drive.google.com/uc?export=download&id=1RSMw_8vj-XUnVNt9ZEh3qJXm82gGf4eW', 'video')">
+                   View Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-img">
+                <img src="pos.png" alt="POS System">
+            </div>
+            <div class="project-content">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>POS System</h3>
+                <p>A comprehensive system designed to manage inventory and generate invoices efficiently.</p>
+                <a href="javascript:void(0)" class="btn" 
+                   onclick="openModal('https://drive.google.com/uc?export=download&id=1b71ja8ILNDIfSQXBkw8i_m-hfuRmrup0', 'video')">
+                   View Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-img">
+                <img src="cisco.png" alt="Cisco Networking">
+            </div>
+            <div class="project-content">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Cisco Networking</h3>
+                <p>A detailed network design and configuration project showcasing professional routing.</p>
+                <a href="javascript:void(0)" class="btn" 
+                   onclick="openModal('https://drive.google.com/uc?export=download&id=1EeYHeT-qaqXhKBYG9Sgw1tjT6NoFGWOw', 'video')">
+                   View Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-img">
+                <img src="madzoo.png" alt="MadZoo">
+            </div>
+            <div class="project-content">
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                <h3>MadZoo Tennis CMS</h3>
+                <p>A C# & MySQL management system featuring member registration and fee tracking.</p>
+                <a href="javascript:void(0)" class="btn" 
+                   onclick="openModal('https://drive.google.com/uc?export=download&id=1KvXlwl1qe_NsUj6Obn2AO4E3SxUlrL9Q', 'video')">
+                   View Demo
+                </a>
+            </div>
+        </div>
+
+    </div> 
+</section>
+  
+    
+<div id="projectModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div id="modalBody"></div>
+    </div>
+</div>
+    
+    
+   <section class="skills" id="skills">
+    <h1 class="heading">My <span>Skills</span></h1>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5 & CSS3</h3>
+            <p>Building responsive and modern web layouts.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Creating interactive and dynamic user experiences.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>C# & .NET</h3>
+            <p>Developing robust desktop and backend applications.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>MySQL</h3>
+            <p>Designing and managing relational database systems.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>Networking</h3>
+            <p>Configuring Cisco systems and network architectures.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Software Engineering</h3>
+            <p>Applying SDLC principles and clean code practices.</p>
+        </div>
+    </div>
+</section>
+    
+    
+    <section class="contact" id="contact">
+    <h1 class="heading">Contact <span>Me!</span></h1>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>dasunilivera5@gamil.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+94 740774377</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Negombo , Sri Lanka </span>
+            </div>
+
+            <div class="contact-sci">
+    <a href="https://www.linkedin.com/in/dasuni-livera-801677347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Dassz06" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://wa.link/569hce" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+        </div>
+
+       <form action="https://formspree.io/f/xbdykbqo" method="POST">
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="tel" name="phone" placeholder="Mobile Number">
+        <input type="text" name="subject" placeholder="Email Subject">
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+    </div>
+</section>
+    
+    <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2026 by <span>Dasuni Livera</span> | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</footer>
+    
+
+
+  
+  <div id="videoModal" class="modal" style="display:none; position: fixed; z-index: 10002; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);">
+    <span onclick="closeModal()" style="position: absolute; top: 15px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+    <div class="modal-content" style="margin: auto; display: block; width: 80%; max-width: 800px; padding-top: 100px;">
+        <div id="modalBody"></div>
+    </div>
+</div>
+   <script src="script.js" defer></script>
+</body>
+</html>
